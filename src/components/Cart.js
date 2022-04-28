@@ -60,12 +60,12 @@ const incrementCount = (cart) => {
 
 
 
-if(filteredCart.length === 0) {
-  alert('No more products in the cart');
-  history.push('/');
-}
-else {
-}
+// if(filteredCart.length === 0) {
+//   alert('No more products in the cart');
+//   history.push('/');
+// }
+// else {
+// }
 
 
 const decrementCount =  (cart) => {
@@ -77,7 +77,9 @@ const decrementCount =  (cart) => {
   return (
     carts != "" && (
       <div className={styling.Cart}>
+        <h1 style = {{margin: '40px', fontSize: '60px'}}>Cart</h1>
         <FlexColumn>
+
           {filteredCart.map((cart) => {
 
             return (
@@ -100,7 +102,7 @@ const decrementCount =  (cart) => {
                   onClick={(e) => {
                     
                     HandleDelete(cart.id);
-                    toastNotification(cart, 'Product removed from the cart');
+                    toastNotification(cart, 'removed from the cart');
                   
                   }}
                 >
@@ -127,7 +129,7 @@ const decrementCount =  (cart) => {
            </Button>
        </div>
        <div className={styling.ActionButtons}>
-              <h1>Total Price :{TotalCartPrice}€</h1>
+              <h1>Total: ${TotalCartPrice}</h1>
               <Button
                 padding="10px 20px"
                 bgColor="var(--lightorange)"

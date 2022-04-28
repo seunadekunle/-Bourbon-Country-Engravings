@@ -5,29 +5,29 @@
   justify-content: center;
   flex-direction: column;
   text-align: center;
-  flex-wrap:wrap;
+  flex-wrap: wrap;
 }
 
 .Checkout h1 {
-
   margin: 10px 0;
   padding: 10px 0;
 }
 
 .CheckoutList {
-  width:450px;
+  width: 450px;
+  margin-top: -25px;
   display: flex;
-  max-width:100%;
+  max-width: 100%;
   align-items: center;
   gap: 10px;
   justify-content: center;
-  flex-wrap:wrap;
-flex-direction: column;
-  min-height:300px; 
+  flex-wrap: wrap;
+  flex-direction: column;
+  min-height: 300px;
 }
 
 .CheckoutBox {
-  width:100%;
+  width: 100%;
   min-height: 80px;
   max-width: calc(100% - 10%);
   display: flex;
@@ -35,28 +35,28 @@ flex-direction: column;
   border-radius: 10px;
   justify-content: center;
   flex-direction: row;
-  background-color: var(--lightorange);
+  background-color: var(--brown);
   color: var(--white);
   flex-wrap: wrap;
 }
 
 .CheckoutBox:hover {
-  background-color:var(--blue);
+  background-color: var(--deepbrown);
   transition: all 1s ease-in-out;
 }
 
 .CheckoutBox img {
-  width:60px;
-  min-height:60px;
-  max-width:100%;
+  width: 60px;
+  min-height: 60px;
+  max-width: 100%;
   object-position: center;
   object-fit: cover;
 }
 
 .CheckoutRow {
-  width:100%;
+  width: 100%;
   display: flex;
-  flex-wrap:wrap;
+  flex-wrap: wrap;
 
   flex-direction: row;
   justify-content: space-around;
@@ -64,6 +64,21 @@ flex-direction: column;
 }
 
 .checkoutInfo {
-  margin:20px 0;
+  margin: 20px 0;
   font-weight: normal;
+}
+
+.Address {
+  margin-top: 20px;
+  width: 75%;
+}
+
+.Address input {
+  margin-left: 0;
+  margin-right: 0;
+  margin-top: 0;
+  border-color: var(--brown);
+  border-radius: 5px;
+  border-width: 3px;
+  margin-bottom: 5px;
 }

@@ -11,7 +11,7 @@ const FlexColumn = memo((props) => {
 <h1>Name</h1>
       </div>
       <div className={styling.FlexInfo}>
-<h1>Quantity</h1>
+<h1>Info</h1>
       </div>
 
       <div className={styling.FlexInfo}>

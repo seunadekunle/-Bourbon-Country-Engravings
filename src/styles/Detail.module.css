@@ -1,0 +1,12 @@
+.Detail {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: row;
+  flex-wrap: wrap;
+  min-height: 100vh;
+  background-color: var(--bg);
+
+}
+

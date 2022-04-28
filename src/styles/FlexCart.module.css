@@ -5,8 +5,18 @@
   justify-content: space-around;
   flex-wrap: wrap;
   flex-direction: row;
+
+}
+
+.FlexCartPlus {
+  width: 100%;
+  align-items: center;
+  justify-content: space-around;
   padding: 5px 0;
-  border: 2px solid lavender;
+  border: 2px solid black;
+  border-radius: 10px;
+  background-color: white;
+  margin-bottom: 20px;
 }
 
 .FlexCart h1 {
@@ -16,9 +26,10 @@
 .FlexCart img {
   width: 100px;
   height: 100px;
-  object-fit: cover;
+  object-fit: contain;
   max-width: 100%;
   max-height:100%;
+  padding: 20px ;
 }
 
 .FlexCart .CartInfo {
@@ -43,10 +54,45 @@
 .FlexCart .icon {
   padding:10px;
   background-color:var(--lightblue);
-  font-weight: bold;
   color:var(--darkblack);
 }
 
+input[type="file"] {
+  display: none;
+}
+
+.uploadLabel {
+  padding: 10px;
+  align-items: center;
+  margin: 20px;
+  border-radius: 5px;
+  border-color: var(--brown);
+  background-color: var(--deepbrown);
+  color: white;
+}
+
+.uploadLabel:hover {
+  padding: 10px;
+  border-radius: 5px;
+  border-width: 1px;
+  border-color: var(--brown);
+  background-color: white;
+  color: black;
+}
+
+input {
+  padding: 10px;
+  align-items: center;
+  margin: 20px;
+  border-radius: 5px;
+  border-color: var(--brown);
+}
+
+input:focus {
+  outline: none;
+  border-width: 3px;
+  border-color: var(--deepbrown);
+}
 @media (max-width:600px) {
   .FlexCart {
     margin: 20px 0;

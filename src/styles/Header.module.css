@@ -9,22 +9,14 @@
   align-items: center;
   justify-content: space-around;
   min-height: 80px;
-  background-color: var(--blue);
+  background-color: var(--bg);
   color: var(--white);
   flex-wrap: wrap;
+  flex-direction: row;
 }
-
-.Header a {
-  color: var(--white);
-  text-align: center;
-  text-decoration: none;
-  font-size: 20px;
-}
-
-
 
 .Header div {
-  width: calc(380px -20px);
+  width: 30%;
   display: flex;
   align-items: center;
   justify-content: center;

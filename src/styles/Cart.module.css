@@ -6,6 +6,7 @@
   flex-direction: column;
   flex-wrap: wrap;
   min-height: 100vh;
+  background-color: var(--bg);
 }
 
 .CartRow {
@@ -13,10 +14,10 @@
   display: flex;
   align-items: center;
   justify-content: space-between;
-  gap:20px;
+  gap: 20px;
   flex-direction: row;
   max-width: 94%;
-  padding:20px 0;
+  padding: 20px 0;
   min-height: 100px;
 }
 
@@ -25,34 +26,31 @@
   margin: 20px 0;
 }
 
-.CartRow > div {
+.CartRow>div {
   flex-basis: 500px;
   display: flex;
   align-items: center;
-  gap:10px;
+  gap: 10px;
   justify-content: center;
   flex-direction: column;
 }
 
 .Cart .deleteIcon {
-  padding:10px;
-  font-size:15px;
+  padding: 10px;
+  font-size: 15px;
   color: var(--white);
-  
+
   background: var(--lightblack)
 }
-
-
-
 
 
 .ActionButtons {
   display: flex;
   align-items: center;
   border-radius: 10px;
-flex-wrap: wrap;
-min-height:50px;
-  flex-direction: row!important;
+  flex-wrap: wrap;
+  min-height: 50px;
+  flex-direction: row !important;
   justify-content: center;
 }
 
@@ -64,7 +62,7 @@ min-height:50px;
 
 @media (max-width:600px) {
   .ActionButtons {
-    width:100%;
+    width: 100%;
     display: flex;
 
     align-items: center;

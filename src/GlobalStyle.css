@@ -9,13 +9,17 @@ html {
 
 :root {
   --transparent:transparent;
-  --white:#fff;
+  --white:rgb(255, 255, 255);
+  --bg:#f5f5f5;
   --lightblack:#1e1e1e;
   --darkblack:#121212;
   --blue:#1D70EA;
   --black:#000;
-  --lightorange:#FE3E36;
+  --lightorange:#ae8b0c;
   --lightblue:rgb(210, 222, 226);
+  --brown: rgb(169,124,80);
+  --deepbrown: #9e6833;
+  --lightbrown: #f0ebe6;
 }
 
 body {

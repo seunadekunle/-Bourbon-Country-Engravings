@@ -18,7 +18,7 @@ export default function Paypal() {
 
      const InitializePaypal   = async() => {
 
-      const paymentInit = await loadScript({ "client-id": "AcVPwH6c4zhgvpb2Oel9HE5dPeSsq4i2Po_PhZ_CZEk49Z5cuJmasT-8n7g8v6kgHXPNpnvUQqivZQ0D" , currency: "EUR" });
+      const paymentInit = await loadScript({ "client-id": "AcVPwH6c4zhgvpb2Oel9HE5dPeSsq4i2Po_PhZ_CZEk49Z5cuJmasT-8n7g8v6kgHXPNpnvUQqivZQ0D" , currency: "USD" });
 
     paymentInit.Buttons({
         createOrder: (data, actions, err) => {
@@ -28,7 +28,7 @@ export default function Paypal() {
               {
                 description: filteredcheck.title,
                 amount: {
-                  currency_code: "EUR",
+                  currency_code: "USD",
                   value: TotalCartPrice
                 }
               }

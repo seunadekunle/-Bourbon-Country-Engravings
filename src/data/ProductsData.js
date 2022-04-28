@@ -1,14 +1,16 @@
 import chocolate from "../assets/chocolate.webp";
-import headphones from "../assets/headphones.webp";
-import macbook from "../assets/macbook.webp";
-import pizza from "../assets/pizza.webp";
+import Picture1 from "../assets/Picture1.png";
+import Picture2 from "../assets/Picture2.png";
+import Picture3 from "../assets/Picture3.png";
 const ProductsData = [
   {
     id: 0,
-    title: "Dairy Chocolate",
-    image: chocolate,
-    price: 5,
+    title: "Bottle 1",
+    image: Picture1,
+    price: 55,
     count: 1,
+    detail: "",
+    addon: "",
     addQty: function () {
       return ++this.count;
     }
@@ -16,10 +18,12 @@ const ProductsData = [
 
   {
     id: 1,
-    title: "Headphones",
-    image: headphones,
-    price: 25,
+    title: "Bottle 2",
+    image: Picture2,
+    price: 55,
     count: 1,
+    detail: "",
+    addon: "",
     addQty: function () {
       return ++this.count;
     }
@@ -27,25 +31,18 @@ const ProductsData = [
 
   {
     id: 2,
-    title: "Macbook M1",
-    image:macbook,
-    price: 680,
+    title: "Bottle 3",
+    image:Picture3,
+    price: 55,
     count: 1,
+    detail: "",
+    addon: "",
     addQty: function () {
       ++this.count;
     }
   },
 
-  {
-    id: 4,
-    title: "Take-away Pizza",
-    image:pizza,
-    price: 10,
-    count: 1,
-    addQty: function () {
-      return ++this.count;
-    }
-  }
+  
 ];
 
 export default ProductsData;
